@@ -14,7 +14,6 @@
         # STEP TWO
         # Extracts only the measurements on the mean and standard deviation for each measurement.
         # Subset dataClean using only subject/activity variables and columns with "mean" or "std" in title
-        dataClean<- subset(dataClean,select = union(c("subject","activityNumber"), grep("mean\\(\\)|std\\(\\)",labelFeatures$featureName,value=TRUE))) 
         
         # STEP THREE
         # Uses descriptive activity names to name the activities in the data set.
